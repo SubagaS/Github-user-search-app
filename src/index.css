@@ -31,6 +31,12 @@ body {
   flex-direction: column;
   align-items: center;
 }
-body{
-    .
+body {
+  background-color: var(--bg-color);
+}
+body.darkMode {
+  --bg-color: var(--neutral900);
+}
+body.brightMode {
+  --bg-color: var(--neutral100);
 }

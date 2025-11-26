@@ -1,10 +1,20 @@
 import styles from './styles.module.css';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import moon from './../../assets/icons/icon-moon.svg';
 import sun from './../../assets/icons/icon-sun.svg';
 
 function Header() {
   const [mode, setMode] = useState(false);
+
+  useEffect(() => {
+    if (mode) {
+      document.body.classList.add('darkMode');
+      document.body.classList.remove('brightMode');
+    } else {
+      document.body.classList.remove('darkMode');
+      document.body.classList.add('brightMode');
+    }
+  }, [mode]);
   function toggle() {
     setMode((m) => !m);
   }
@@ -12,17 +22,15 @@ function Header() {
     <>
       <section className={styles.headerContainer}>
         <p>devfinder</p>
-        <button onClick={toggle}>
-          {mode ? (
-            <>
-              <img src={moon} alt="moon-icon" className={styles.darkMode} />
-            </>
-          ) : (
-            <>
-              <img src={sun} alt="sun-icon" className={styles.brightMode}/>
-            </>
-          )}
-        </button>
+        {mode ? (
+          <button onClick={toggle}>
+            <img src={moon} alt="moon-icon" />
+          </button>
+        ) : (
+          <button onClick={toggle}>
+            <img src={sun} alt="sun-icon" />
+          </button>
+        )}
       </section>
     </>
   );
