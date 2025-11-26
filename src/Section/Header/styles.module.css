@@ -1,0 +1,6 @@
+.darkMode {
+  background-color: var(--neutral900);
+}
+.brightMode {
+  background-color: var(--neutral100);
+}
