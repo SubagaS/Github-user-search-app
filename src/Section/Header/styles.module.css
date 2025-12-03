@@ -3,52 +3,26 @@
   align-items: center;
   justify-content: space-between;
 }
-.headerTitleDark,
-.headerTitleBright {
+.headerTitle {
   font-size: 1.625rem;
   font-weight: 800;
-}
-.headerTitleDark {
-  color: var(--neutral900);
-}
-.headerTitleBright {
-  color: var(--neutral0);
+  color: var(--titleHeader);
 }
 
-.darkBtn,
-.brightBtn {
-  border: none;
-  font-family: inherit;
-  text-transform: uppercase;
-  font-size: 0.8rem;
-  font-weight: 800;
-  line-height: 140%;
-  letter-spacing: 2.5px;
+.toggleBtn {
   display: flex;
   align-items: center;
   gap: 1rem;
-  width: 5.375rem;
-  height: 1.25rem;
+  background-color: transparent;
+  border: none;
+  color: var(--themeText);
+  font-family: inherit;
+  font-weight: 800;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.15rem;
+  line-height: 140%;
   &:hover {
     cursor: pointer;
-  }
-}
-.darkBtn {
-  background-color: var(--neutral100);
-  color: var(--neutral500);
-}
-.brightBtn {
-  background-color: var(--neutral900);
-  color: var(--neutral200);
-}
-
-.moonIcon {
-  path {
-    fill: var(--neutral500);
-  }
-}
-.sunIcon {
-  g {
-    fill: var(--neutral200);
   }
 }

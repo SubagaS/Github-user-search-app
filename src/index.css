@@ -9,17 +9,24 @@
 }
 
 :root {
-  --neutral900: #141d2f;
-  --neutral800: #1e2a47;
+  --bg-color: #f6f8ff;
+  --searchBar: #ffffff;
+  --searchBtnText: #ffffff;
+  --titleHeader: #141d2f;
+  --themeText: #4b6a9b;
+  --searchShadow: rgba(70, 96, 187, 19.86%);
   --neutral700: #2b3442;
-  --neutral500: #4b6a9b;
   --neutral300: #697c9a;
-  --neutral100: #f6f8ff;
-  --neutral200: #90a4d4;
-  --neutral0: #ffffff;
   --blue300: #60abff;
   --blue500: #0079ff;
   --red500: #f74646;
+}
+[data-theme='dark'] {
+  --bgColor: #141d2f;
+  --themeText: #90a4d4;
+  --searchBar: #1e2a47;
+  --titleHeader: #ffffff;
+  --searchShadow: transparent;
 }
 
 html,
@@ -29,14 +36,8 @@ body {
   font-family: Space Mono;
 }
 body {
-  background-color: var(--bg-color);
+  background-color: var(--bgColor);
   padding: 2rem 1rem;
-}
-body.darkMode {
-  --bg-color: var(--neutral900);
-}
-body.brightMode {
-  --bg-color: var(--neutral100);
 }
 #root {
   width: 100%;
