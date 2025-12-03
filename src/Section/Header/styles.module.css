@@ -1,0 +1,28 @@
+.headerContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.headerTitle {
+  font-size: 1.625rem;
+  font-weight: 800;
+  color: var(--titleHeader);
+}
+
+.toggleBtn {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background-color: transparent;
+  border: none;
+  color: var(--themeText);
+  font-family: inherit;
+  font-weight: 800;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.15rem;
+  line-height: 140%;
+  &:hover {
+    cursor: pointer;
+  }
+}
