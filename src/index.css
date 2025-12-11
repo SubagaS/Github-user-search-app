@@ -14,7 +14,11 @@
   --searchBtnText: #ffffff;
   --titleHeader: #141d2f;
   --themeText: #4b6a9b;
+  --profileCardText: #4b6a9b;
   --searchShadow: rgba(70, 96, 187, 19.86%);
+  --profileCard: #ffffff;
+  --followSection: #f6f8ff;
+  --iconColor: #141d2f;
   --neutral700: #2b3442;
   --neutral300: #697c9a;
   --blue300: #60abff;
@@ -27,6 +31,10 @@
   --searchBar: #1e2a47;
   --titleHeader: #ffffff;
   --searchShadow: transparent;
+  --profileCard: #1e2a47;
+  --profileCardText: #ffffff;
+  --followSection: #141d2f;
+  --iconColor: #ffffff;
 }
 
 html,

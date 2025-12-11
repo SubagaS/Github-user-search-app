@@ -3,11 +3,14 @@ import { createRoot } from 'react-dom/client';
 import './index.css';
 import App from './App.tsx';
 import { ThemeProvider } from './Context/ThemeProvider.tsx';
+import { GitHubUserProvider } from './Context/GitHubUserProvider.tsx';
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <ThemeProvider>
-      <App />
-    </ThemeProvider>
+    <GitHubUserProvider>
+      <ThemeProvider>
+        <App />
+      </ThemeProvider>
+    </GitHubUserProvider>
   </StrictMode>
 );
