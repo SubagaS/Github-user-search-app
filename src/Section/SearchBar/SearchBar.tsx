@@ -11,6 +11,11 @@ function SearchBar() {
       fetchUser(username);
     }
   };
+  const handleKeyDown = (e: React.KeyboardEvent<HTMLInputElement>) => {
+    if (e.key == 'Enter') {
+      handleSearch();
+    }
+  };
   return (
     <>
       <section className={styles.searchContainer}>
@@ -19,22 +24,25 @@ function SearchBar() {
           className={styles.searchInput}
           placeholder="Search Github username..."
           onChange={(e) => setUsername(e.target.value)}
+          onKeyDown={handleKeyDown}
         />
         <div className={styles.searchIconBtn}>
           <img
             src={searchIcon}
-
             alt="search-icon"
             className={styles.searchIcon}
           />
           <button
             className={styles.searchBtn}
             onClick={handleSearch}
+            type="button"
           >
             Search
           </button>
         </div>
-        {errorSearchBar && <p>{errorSearchBar}</p>}
+        {errorSearchBar && (
+          <p className={styles.searchError}>{errorSearchBar}</p>
+        )}
       </section>
     </>
   );

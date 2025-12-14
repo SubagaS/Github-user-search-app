@@ -1,5 +1,6 @@
-.contentWrapper{
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
+.contentWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: clamp(21.4rem, 90vw, 45.6rem);
 }

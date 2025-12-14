@@ -14,12 +14,12 @@
   --searchBtnText: #ffffff;
   --titleHeader: #141d2f;
   --themeText: #4b6a9b;
-  --profileCardText: #4b6a9b;
+  --profileCardMainText: #2b3442;
+  --profileCardInfoText: #4b6a9b;
   --searchShadow: rgba(70, 96, 187, 19.86%);
   --profileCard: #ffffff;
   --followSection: #f6f8ff;
   --iconColor: #141d2f;
-  --neutral700: #2b3442;
   --neutral300: #697c9a;
   --blue300: #60abff;
   --blue500: #0079ff;
@@ -32,7 +32,8 @@
   --titleHeader: #ffffff;
   --searchShadow: transparent;
   --profileCard: #1e2a47;
-  --profileCardText: #ffffff;
+  --profileCardMainText: #ffffff;
+  --profileCardInfoText: #ffffff;
   --followSection: #141d2f;
   --iconColor: #ffffff;
 }
@@ -52,4 +53,8 @@ body {
   height: 100%;
   display: flex;
   flex-direction: column;
+  @media only screen and (min-width: 600px) {
+    justify-content: center;
+    align-items: center;
+  }
 }

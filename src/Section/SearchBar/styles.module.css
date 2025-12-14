@@ -11,6 +11,7 @@
   border-radius: 1rem;
   border: none;
   background-color: var(--searchBar);
+  color: var(--profileCardInfoText);
   &::placeholder {
     font-family: Space Mono;
   }
@@ -38,4 +39,12 @@
   position: absolute;
   right: 0.75rem;
   top: 0.5rem;
+}
+.searchError {
+  position: absolute;
+  top: 1.25rem;
+  right: 8rem;
+  font-size: 1rem;
+  font-weight: 800;
+  color: var(--red500);
 }

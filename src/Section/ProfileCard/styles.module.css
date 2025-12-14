@@ -1,3 +1,123 @@
-.cardContainer{
-    
+.cardContainer {
+  background-color: var(--profileCard);
+  box-shadow: 0 1rem 1.875rem var(--searchShadow);
+  display: flex;
+  flex-direction: column;
+  max-width: 45.625rem;
+  padding: 2rem 1.5rem;
+  border-radius: 0.9rem;
+  gap: 1.5rem;
+  @media only screen and (min-width: 1440px) {
+    padding: 3rem;
+  }
+}
+.userImgText {
+  display: flex;
+  gap: 2rem;
+}
+.profileImg {
+  width: clamp(4.375rem, 10vw, 7.31rem);
+  height: clamp(4.375rem, 10vw, 7.31rem);
+  border-radius: 50%;
+}
+
+.userInfoText {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  @media only screen and (min-width: 1440px) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+.username {
+  display: flex;
+  flex-direction: column;
+  color: var(--profileCardMainText);
+  font-size: 1.6rem;
+  font-weight: 800;
+  span {
+    color: var(--blue500);
+    font-size: 1rem;
+    font-weight: 400;
+  }
+}
+.joinDate {
+  color: var(--profileCardInfoText);
+  font-size: 0.9rem;
+}
+.userInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.userBio {
+  font-size: 0.9rem;
+  color: var(--profileCardInfoText);
+}
+.followContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  background-color: var(--followSection);
+  padding: 1rem 1.5rem;
+  border-radius: 0.625rem;
+  @media only screen and (min-width: 1440px) {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+  }
+}
+.repoTitle {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  color: var(--profileCardInfoText);
+  font-size: 0.8rem;
+  span {
+    color: var(--profileCardMainText);
+    font-size: 1.375rem;
+    font-weight: 800;
+  }
+}
+.linkContainer {
+  display: grid;
+  gap: 1rem;
+  @media only screen and (min-width: 1440px) {
+    grid-template-columns: auto auto;
+  }
+}
+.link {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  svg {
+    path {
+      fill: var(--iconColor);
+    }
+  }
+}
+.linkText {
+  color: var(--profileCardInfoText);
+}
+.profileError {
+  background-color: var(--profileCard);
+  box-shadow: 0 1rem 1.875rem var(--searchShadow);
+  border-radius: 0.9rem;
+  padding: 3rem;
+  p {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    color: var(--profileCardMainText);
+    font-size: 1.375rem;
+    font-weight: 800;
+  }
+  span {
+    text-align: center;
+    color: var(--profileCardInfoText);
+    font-size: 0.9rem;
+    font-weight: 400;
+  }
 }
